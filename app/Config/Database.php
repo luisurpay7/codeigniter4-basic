@@ -32,11 +32,11 @@ class Database extends Config
      */
     public $default = [
         'DSN'      => '',
-        'hostname' => 'localhost',
-        'username' => '',
-        'password' => '',
-        'database' => '',
-        'DBDriver' => 'MySQLi',
+        'hostname' => '10.23.23.7', //localhost
+        'username' => 'dbprogress_user01',
+        'password' => 'u$3Rdbpr0g',
+        'database' => 'test01',
+        'DBDriver' => 'Postgre', //'MySQLi'
         'DBPrefix' => '',
         'pConnect' => false,
         'DBDebug'  => (ENVIRONMENT !== 'production'),
@@ -47,7 +47,7 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 3306,
+        'port'     => 5432, //3306 : MySQL
     ];
 
     /**

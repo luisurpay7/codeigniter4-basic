@@ -4,8 +4,18 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
+
+    public $modelHome=NULL;
+
+    public function __construct()
+    {
+        $this->modelHome = model('HomeModel');
+    }
+
     public function index()
     {
-        return view('welcome_message');
+        $data = $this->modelHome->entidades_lst();
+        echo var_dump($data);
+        //return view('welcome_message');
     }
 }
